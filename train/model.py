@@ -3,8 +3,6 @@
 import numpy as np
 import tensorflow as tf
 
-from tensorflow.python.ops import array_ops
-
 class BaseModel():
     """Base model
        Build CNN and LSTM units
