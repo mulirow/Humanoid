@@ -12,6 +12,7 @@ from xmlrpc.server import SimpleXMLRPCServer, SimpleXMLRPCRequestHandler
 import numpy as np
 from pyflann import *
 import tensorflow as tf
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 tf_config = tf.ConfigProto()
 tf_config.gpu_options.allow_growth = True
 from matplotlib import pyplot as plt
