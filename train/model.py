@@ -20,7 +20,7 @@ class BaseModel():
         else:
             self.weight_decay = 0.0
             self.batch_size = 1
-            self.keep_prob = 0.5
+            self.keep_prob = 0.99
         self.regularizer = tf.contrib.layers.l2_regularizer(scale=self.weight_decay)
 
         self.input_images = None
